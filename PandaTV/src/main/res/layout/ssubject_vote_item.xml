@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical"
+    android:paddingBottom="1px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="770px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10px" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@drawable/home_panda_eye_border"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tvSSuVoteTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="我要投票"
+                    android:textColor="@color/home_group_title"
+                    android:textSize="48px" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivSSuVoteImg"
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/home_panda_eye_border"
+                android:scaleType="fitXY"
+                android:src="@drawable/pe_defaule_item_img" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="5px"
+                android:background="@drawable/home_vote_border"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tvSSuVote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要投票"
+                    android:textColor="@color/home_text"
+                    android:textSize="48px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

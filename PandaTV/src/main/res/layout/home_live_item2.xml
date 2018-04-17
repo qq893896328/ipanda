@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="132px"
+    android:background="@color/home_tab_back"
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/llHomeLive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/llLiveItem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_live_border1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvLiveItem1"
+                style="@style/home_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="36px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llLiveItem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_live_border1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvLiveItem2"
+                style="@style/home_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="36px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llLiveItem3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_live_border1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvLiveItem3"
+                style="@style/home_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="36px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llLiveItem4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_live_border1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvLiveItem4"
+                style="@style/home_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="36px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llLiveItem5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_live_border2"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvLiveItem5"
+                style="@style/home_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="36px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

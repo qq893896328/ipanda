@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pe_bg_light_blue"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pe_bg_light_blue"
+            android:orientation="vertical" >
+
+            <!-- tab标签 -->
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/collect_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/lpanda_scroll_color_selected"
+                app:tabIndicatorHeight="3dp"
+                app:tabBackground="@color/white"
+                app:tabTextColor="@color/black"
+                app:tabSelectedTextColor="@color/lpanda_scroll_color_selected"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/collect_viewpager"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+            <!-- 标签一对应的列表 -->
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:id="@+id/personal_sc_zhibo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <cn.cntv.app.ipanda.xlistview.XListView
+                    android:id="@+id/personal_sc_zhibo_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/pe_bg_light_blue"
+                    android:dividerHeight="@dimen/hline_height"
+                    android:fadingEdge="none"
+                    android:layout_above="@+id/personal_sc_zhibo_bottom"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none" >
+                </cn.cntv.app.ipanda.xlistview.XListView>
+
+                <LinearLayout
+                    android:id="@+id/personal_sc_zhibo_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hline_height"
+                        android:background="@color/cctv_grey"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/personal_sc_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="全选"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <View
+                            android:layout_width="@dimen/hline_height"
+                            android:layout_height="match_parent"
+                            android:background="@color/cctv_grey" >
+                        </View>
+
+                        <TextView
+                            android:id="@+id/personal_sc_delete"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="删除"
+                            android:textColor="@drawable/color_selector_collect" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/layout_noData1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/cctv_grey"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/_no_collect"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:id="@+id/personal_sc_kandian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <cn.cntv.app.ipanda.xlistview.XListView
+                    android:id="@+id/personal_sc_kandian_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/personal_sc_kandian_bottom"
+                    android:layout_below="@id/personal_history_item_detail_top"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/pe_bg_light_blue"
+                    android:dividerHeight="@dimen/hline_height"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none" >
+                </cn.cntv.app.ipanda.xlistview.XListView>
+
+                <LinearLayout
+                    android:id="@+id/personal_sc_kandian_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hline_height"
+                        android:background="@color/cctv_grey"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/personal_sc_kandian_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="全选"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cctv_grey" >
+                        </View>
+
+                        <TextView
+                            android:id="@+id/personal_sc_kandian_delete"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="删除"
+                            android:textColor="@drawable/color_selector_collect" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/layout_noData2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/cctv_grey"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/_no_collect"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivNoNet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/def_no_net"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

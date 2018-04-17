@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 熊猫专题直播页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/lpanda_special_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/lpandaknown_content_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/def_no_iv" />
+
+            <ImageView
+                android:id="@+id/operate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:onClick="onPlayClick"
+                android:src="@drawable/lpanda_pause" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:gravity="left"
+            android:paddingBottom="12px"
+            android:paddingLeft="50px"
+            android:paddingTop="10dp"
+            android:textColor="@color/cctv_tab_unsel"
+            android:textSize="42px" />
+
+        <RelativeLayout
+            android:id="@+id/livepanda_second_jieje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/brefLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="50px"
+                android:text="@string/jianjie"
+                android:textSize="36px"
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="120px"
+                android:layout_height="48px"
+                android:layout_alignTop="@+id/brefLabel"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/lpanda_show" />
+        </RelativeLayout>
+
+        <cn.cntv.app.ipanda.view.VerticalScrollview
+            android:id="@+id/lpanda_scrollList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:background="@color/cctv_space" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+             <!--    <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hline_height"
+                    android:layout_below="@+id/arrow"
+                    android:orientation="horizontal" >
+                </LinearLayout> -->
+
+                <TextView
+                    android:id="@+id/bref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_marginTop="5px"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="12px"
+                    android:paddingBottom="32px"
+                    android:paddingLeft="60px"
+                    android:paddingRight="60px"
+                    android:paddingTop="72px"
+                    android:textColor="@color/cctv_tab_unsel"
+                    android:textSize="40px"
+                    android:visibility="gone" />
+
+                <include
+                    android:layout_height="114px"
+                    layout="@layout/lpanda_known_bottom"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </cn.cntv.app.ipanda.view.VerticalScrollview>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lpanda_no_net_special"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/def_no_net"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvVoteOptiValueIetter"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:background="#0000AA"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/white"
+            android:textSize="56px" />
+
+        <TextView
+            android:id="@+id/tvVoteOptiValueTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvVotePrb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:background="#FFD700"
+            android:textSize="40px" />
+
+        <LinearLayout
+            android:id="@+id/llVoteNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvVoteOptiValuePCT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tvVoteOptiValueTik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textSize="40px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

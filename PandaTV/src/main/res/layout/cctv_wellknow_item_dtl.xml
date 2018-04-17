@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 央视名栏底层页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/layout_common_title"
+            layout="@layout/common_title2" />
+
+        <ImageView
+            android:id="@+id/ivNoNet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/def_no_net"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <include
+                    android:id="@+id/lpanda_giraffe_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/giraffe_player"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="600px"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/operate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:onClick="onPlayClick"
+                    android:src="@drawable/lpanda_pause"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="12px"
+                android:paddingLeft="50px"
+                android:textColor="@color/cctv_tab_unsel"
+                android:textSize="40px" />
+
+            <RelativeLayout
+                android:id="@+id/cctvdetail_jianjie"
+                android:layout_width="match_parent"
+                android:onClick="onExpandClick"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/brefLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="50px"
+                    android:text="@string/culture_detail_breif"
+                    android:textSize="11sp"
+                    android:textColor="@color/subscribe_item_text_color_pressed" />
+        <RelativeLayout
+            android:id="@+id/cctv_buttom_arrow"
+            android:layout_width="50dp"
+            android:layout_alignTop="@+id/brefLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:layout_centerHorizontal="true"
+
+                    android:src="@drawable/lpanda_show" />
+        </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hline_height"
+                android:layout_below="@+id/arrow"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <cn.cntv.app.ipanda.view.CCTVVerticalScrollview
+                android:id="@+id/scroll_wrapList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/bref"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout1"
+                        android:lineSpacingExtra="12px"
+                        android:paddingBottom="72px"
+                        android:paddingLeft="60px"
+                        android:paddingRight="60px"
+                        android:paddingTop="72px"
+                        android:textColor="@color/cctv_tab_unsel"
+                        android:textSize="40px"
+                        android:visibility="gone" />
+
+                    <include
+                        layout="@layout/cctv_dtl_bottom"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </cn.cntv.app.ipanda.view.CCTVVerticalScrollview>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cctv_grey2"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="onCollectClick"
+                android:src="@drawable/collect_no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"
+                android:onClick="onShareClick"
+                android:src="@drawable/share" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

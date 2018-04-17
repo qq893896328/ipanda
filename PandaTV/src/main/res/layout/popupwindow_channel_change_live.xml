@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_half_up"
+    android:orientation="vertical" 
+    >
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/channel_change_listview"
+        android:divider="@color/white"
+	    android:listSelector="@android:color/transparent"
+	    android:dividerHeight="2px"
+	    android:scrollbarThumbVertical="@color/transparent"
+	    android:cacheColorHint="@android:color/transparent"
+        >
+        
+    </ListView>
+
+</LinearLayout>

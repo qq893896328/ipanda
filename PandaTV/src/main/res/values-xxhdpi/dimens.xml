@@ -1,0 +1,28 @@
+<resources>
+     <!-- 1080*1920分辨率下定义的垫底图宽高 -->
+    <dimen name="no_img_w">1080px</dimen>	<!-- 垫底图：轮播图宽 -->
+    <dimen name="no_img_h">608px</dimen>	<!-- 垫底图：轮播图高 -->
+    <dimen name="row1_2_w">480px</dimen>	<!-- 垫底图：一行二宽 -->
+    <dimen name="row1_2_h">270px</dimen>	<!-- 垫底图：一行二高 -->
+    <dimen name="row1_3_w">310px</dimen>	<!-- 垫底图：一行三宽 -->
+    <dimen name="row1_3_h">174px</dimen>	<!-- 垫底图：一行三高 -->
+    <dimen name="row_all_w">466px</dimen>	<!-- 垫底图：整行推拉宽 -->
+    <dimen name="row_all_h">260px</dimen>	<!-- 垫底图：整行推拉高 -->
+    <dimen name="tw_w">410px</dimen>		<!-- 垫底图：图配文宽 -->
+    <dimen name="tw_h">231px</dimen>		<!-- 垫底图：图配文高 -->
+    <dimen name="subject_hor_w">990px</dimen>	<!-- 垫底图：专题横宽 -->
+    <dimen name="subject_hor_h">557px</dimen>	<!-- 垫底图：专题横高 -->
+    <dimen name="subject_ver_w">480px</dimen>	<!-- 垫底图：专题竖宽 -->
+    <dimen name="subject_ver_h">600px</dimen>	<!-- 垫底图：专题竖高 -->
+    
+    <dimen name="no_net_w">1080px</dimen>	<!-- 垫底图：无网络宽 -->
+    <dimen name="no_net_h">600px</dimen>	<!-- 垫底图：无网络高 -->
+    <dimen name="no_history_w">1080px</dimen>	<!-- 垫底图：无历史记录宽 -->
+    <dimen name="no_history_h">600px</dimen>	<!-- 垫底图：无历史记录高 -->	
+    <dimen name="no_collect_w">1080px</dimen>	<!-- 垫底图：无收藏宽 -->
+    <dimen name="no_collect_h">600px</dimen>	<!-- 垫底图：无收藏高 -->
+    
+    <dimen name="label_w">280px</dimen>		<!-- cctv多语种label标签的宽 -->
+    <dimen name="label_h">72px</dimen>		<!-- cctv多语种label标签的高 -->
+ 
+</resources>

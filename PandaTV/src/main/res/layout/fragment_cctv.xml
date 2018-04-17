@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cctv_space"
+        android:orientation="vertical" >
+
+        <!-- tab标签 -->
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="122px"
+            android:layout_marginTop="20px"
+            android:background="@color/white" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/tab_divider"
+                android:dividerPadding="-5dp"
+                android:tabStripEnabled="true"
+                android:tabStripLeft="@drawable/tab_divider"
+                android:tabStripRight="@color/cctv_tab_unsel" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+            </FrameLayout>
+        </TabHost>
+
+        <!-- 标签一对应的列表 -->
+
+        <cn.cntv.app.ipanda.xlistview.XListView
+            android:id="@+id/cctv_listview1"
+            style="@style/as_home_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/cctv_space"
+            android:dividerHeight="20px"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </cn.cntv.app.ipanda.xlistview.XListView>
+        <!-- 标签二对应的列表 -->
+
+        <cn.cntv.app.ipanda.xlistview.XListView
+            android:id="@+id/cctv_listview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </cn.cntv.app.ipanda.xlistview.XListView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivNoNet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/def_no_net"
+        android:visibility="gone" />
+
+</RelativeLayout>

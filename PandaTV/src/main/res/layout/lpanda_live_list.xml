@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lpanda_scroll"
+    android:background="@color/cctv_space"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       <!--  <RelativeLayout
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            
+            android:layout_height="312dp" >
+
+            <TextView
+                android:id="@+id/lpanda_jianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lpanda_text"
+                android:layout_below="@+id/lpanda_text"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="32px"
+                android:textSize="38px"
+                android:layout_marginBottom="20px"
+                android:text="简介" />
+
+            <ImageView
+                android:id="@+id/lpanda_con_image"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_marginBottom="8px"
+                android:layout_alignBottom="@+id/lpanda_jianjie"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/lpanda_show" />
+
+            <TextView
+                android:id="@+id/lpanda_context"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lpanda_jianjie"
+                android:layout_marginLeft="10dp"
+                android:padding="10px"
+                android:visibility="gone"
+                android:text="" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lpanda_context"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/lpanda_botleft"
+                    android:layout_width="0px"
+                    android:layout_height="132px"
+                    android:layout_weight="2"
+                    android:paddingTop="46px"
+                    android:paddingBottom="40px"
+                    android:textSize="42px"
+                    android:gravity="center"
+                    android:text="熊猫剧场" />
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="#c7c7c7" />
+
+                <TextView
+                    android:id="@+id/lpanda_botright"
+                   android:layout_width="0dp"
+                    android:layout_height="132px"
+                    android:paddingTop="46px"
+                    android:layout_weight="2"
+                    android:paddingBottom="40px"
+                    android:textSize="42px"
+                    android:gravity="center"
+                     android:textColor="#000"
+                    android:text="边看边聊" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/lpanda_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:numColumns="3"
+                android:padding="5px" >
+
+            </GridView>
+
+            <ListView
+                android:id="@+id/lpanda_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" 
+                android:padding="5px"
+                >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/lpanda_botright_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/lpanda_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10px"
+                    android:ems="10"
+                    android:hint="输入评论..." >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/lpanda_commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/lpanda_editText"
+                    android:layout_alignBottom="@+id/lpanda_editText"
+                    android:layout_alignParentRight="true"
+                    android:text="发送" />
+            </RelativeLayout>
+        </RelativeLayout> -->
+    </LinearLayout>
+
+</ScrollView>

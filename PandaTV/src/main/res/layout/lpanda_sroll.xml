@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/panda_bg_color" 
+    android:id="@+id/lpanda_main_layout"
+    >
+    
+    <!-- <HorizontalScrollView
+        android:id="@+id/lpanda_top"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20px"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/lpanda_scroll_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </RadioGroup>
+    </HorizontalScrollView>
+ -->
+    <!-- <RelativeLayout
+        android:id="@+id/lpanda_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lpanda_top" >
+    </RelativeLayout> -->
+    
+
+    <RelativeLayout
+        android:id="@+id/lpanda_no_net_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/_no_net"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

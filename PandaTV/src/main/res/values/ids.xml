@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_tag_autolayout_size" type="id"></item>
+    <item name="id_tag_autolayout_padding" type="id"></item>
+    <item name="id_tag_autolayout_margin" type="id"></item>
+    <item name="lovepanda_zhibo" type="id"></item>
+    <item name="lovepanda_zhuangti" type="id"></item>
+    <item name="glide_tag_id" type="id"/>
+</resources>

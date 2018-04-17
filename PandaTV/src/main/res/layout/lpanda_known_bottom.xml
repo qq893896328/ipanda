@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cctv_space"
+    android:orientation="vertical"
+    android:paddingLeft="13px"
+    android:paddingRight="13px"
+    android:paddingTop="5px" >
+
+    <!-- tab标签 -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="122px"
+        android:background="@color/white" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/tab_divider"
+            android:dividerPadding="-5dp"
+            android:showDividers="none"
+            android:tabStripEnabled="true"
+            android:tabStripLeft="@drawable/tab_divider"
+            android:tabStripRight="@color/cctv_tab_unsel" >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </FrameLayout>
+    </TabHost>
+
+    <!-- 标签一对应的列表 -->
+
+    <!-- <cn.cntv.app.ipanda.xlistview.MyXListView
+        android:id="@+id/lpanda_listview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/cctv_grey"
+        android:dividerHeight="@dimen/hline_height"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </cn.cntv.app.ipanda.xlistview.MyXListView> -->
+     <cn.cntv.app.ipanda.xlistview.MyGridView
+        android:id="@+id/lpanda_listview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:layout_marginBottom="5px"
+        android:verticalSpacing="@dimen/hline_height"
+       android:background="@color/cctv_grey"
+        android:visibility="gone" >
+    </cn.cntv.app.ipanda.xlistview.MyGridView>
+    <RelativeLayout
+        android:id="@+id/lpanda_specail_watchtalk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="20px"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/lpanda_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="18px"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/send_pinglun"
+            android:textColor="@color/white" />
+
+        <cn.cntv.app.ipanda.view.ClearEditText
+            android:id="@+id/lpanda_input"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="18px"
+            android:layout_toLeftOf="@+id/lpanda_btn"
+            android:background="@drawable/pe_shape_border_grays"
+            android:gravity="center_vertical"
+            android:hint="@string/lpanda_watchtalk"
+            android:inputType="textMultiLine"
+            android:padding="10px"
+            android:textCursorDrawable="@null"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <cn.cntv.app.ipanda.xlistview.MyXListView
+        android:id="@+id/lpanda_watchtalk_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lpanda_specail_watchtalk"
+        android:divider="@color/cctv_grey"
+        android:dividerHeight="@dimen/hline_height"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="2px"
+         android:visibility="gone"
+        android:scrollbars="none" >
+    </cn.cntv.app.ipanda.xlistview.MyXListView>>
+
+ 
+</LinearLayout>

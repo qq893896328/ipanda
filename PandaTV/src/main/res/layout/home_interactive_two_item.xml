@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical"
+    android:paddingBottom="1px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="30px" >
+
+        <LinearLayout
+            android:layout_width="480px"
+            android:layout_height="760px"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivHomeInterTwo1"
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:scaleType="fitXY"
+                android:src="@drawable/pe_defaule_item_img" />
+
+            <TextView
+                android:id="@+id/tvHomeInterTwo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:ellipsize="end"
+                android:textSize="42px"
+                android:lines="2"
+                android:textColor="@color/home_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHomeInterTwoGroup"
+            android:layout_width="480px"
+            android:layout_height="760px"
+            android:layout_marginLeft="30px"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivHomeInterTwo2"
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                android:scaleType="fitXY"
+                android:src="@drawable/pe_defaule_item_img" />
+
+            <TextView
+                android:id="@+id/tvHomeInterTwo2"
+                android:layout_width="455px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textSize="42px"
+                android:textColor="@color/home_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

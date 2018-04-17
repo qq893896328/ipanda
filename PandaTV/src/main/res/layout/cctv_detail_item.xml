@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 央视名栏底层页的item布局——pj -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/tw_w"
+            android:layout_height="@dimen/tw_h"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:scaleType="fitXY" />
+
+
+
+        <TextView
+            android:id="@+id/videoLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView1"
+            android:layout_alignLeft="@id/imageView1"
+            android:background="@drawable/default_time_view"
+            android:drawableLeft="@drawable/play"
+            android:drawablePadding="3dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="02:39"
+            android:textColor="@color/white"
+            android:textSize="36px"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_toRightOf="@+id/imageView1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textColor="@color/cctv_tab_unsel" />
+    </RelativeLayout>
+
+</LinearLayout>

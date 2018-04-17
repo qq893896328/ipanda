@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:paddingBottom="1px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/llHomeVLGroup1"
+            android:layout_width="525px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="30px"
+            android:paddingRight="15px"
+            android:paddingTop="30px" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270px" >
+
+                <ImageView
+                    android:id="@+id/ivHomeVLBigImg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/def_no_iv" />
+
+                <RelativeLayout
+                    android:id="@+id/rlHomeVLPlayTime1"
+                    android:layout_width="250px"
+                    android:layout_height="62px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/default_time_view"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivHomeVLSmImg1"
+                        android:layout_width="32px"
+                        android:layout_height="32px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15px"
+                        android:src="@drawable/home_play_icon" />
+
+                    <TextView
+                        android:id="@+id/tvHomeVlPlayTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/ivHomeVLSmImg1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="02:39"
+                        android:textColor="@color/white"
+                        android:textSize="36px" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvHomeVlTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="42px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHomeVLGroup2"
+            android:layout_width="525px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingLeft="15px"
+            android:paddingRight="30px"
+            android:paddingTop="30px" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270px" >
+
+                <ImageView
+                    android:id="@+id/ivHomeVLBigImg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/def_no_iv" />
+
+                <RelativeLayout
+                    android:id="@+id/rlHomeVLPlayTime2"
+                    android:layout_width="250px"
+                    android:layout_height="62px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/default_time_view"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivHomeVLSmImg2"
+                        android:layout_width="32px"
+                        android:layout_height="32px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15px"
+                        android:src="@drawable/home_play_icon" />
+
+                    <TextView
+                        android:id="@+id/tvHomeVlPlayTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@+id/ivHomeVLSmImg2"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textColor="@color/white"
+                        android:textSize="36px" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvHomeVlTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="42px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

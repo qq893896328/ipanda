@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_subscribe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+	<RelativeLayout 
+	    android:layout_width="142.0dp"
+	    android:layout_height="43.0dp"
+	    android:layout_centerInParent="true"
+	    >
+		<TextView
+	        android:id="@+id/text_item"
+	        android:layout_width="142.0dp"
+	        android:layout_height="43.0dp"
+	        android:gravity="center"
+	        android:background="@color/white"
+	        android:textColor="@color/black"
+	        android:textSize="15.0sp"
+	        android:layout_margin="5dp"
+	        android:padding="1dp"
+	         />
+	    <!-- android:layout_margin="5dip" -->
+	
+	    <ImageView
+	        android:id="@+id/icon_new"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/channel_new"
+	        android:visibility="gone" />
+	    
+	    <ImageView 
+	        android:id="@+id/live_china_txt_edig_edit"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:background="@drawable/shape_little_blue_corner"
+	        android:layout_alignParentRight="true"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/live_china_delect_channel"
+	        android:visibility="gone"
+	        />
+	    
+	</RelativeLayout>
+
+</RelativeLayout>

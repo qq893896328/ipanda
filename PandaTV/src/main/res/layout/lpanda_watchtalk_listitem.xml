@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="8px"
+    android:background="@color/white">
+    <TextView 
+        android:id="@+id/lpanda_watchtalk_uid"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/gray"
+        android:text="4503221"
+        android:textSize="36px"/>
+
+     <TextView
+         android:id="@+id/lpanda_watchtalk_content"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/lpanda_watchtalk_uid"
+         android:layout_below="@+id/lpanda_watchtalk_uid"
+         android:layout_toLeftOf="@+id/lpanda_watchtalk_data"
+         android:text="Content"
+         android:textSize="42px"
+         android:layout_marginLeft="10dp"
+         android:textColor="@color/black"/>
+
+      <TextView
+          android:id="@+id/lpanda_watchtalk_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/lpanda_watchtalk_content"
+          android:layout_alignBottom="@+id/lpanda_watchtalk_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:text="2016.1.2"
+          android:textSize="36px"
+          android:textColor="@color/gray"/>
+
+      <TextView
+          android:id="@+id/lpanda_watchtalk_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/lpanda_watchtalk_uid"
+          android:layout_alignRight="@+id/lpanda_watchtalk_data"
+          android:background="@color/cctv_grey"
+          android:paddingLeft="8px"
+          android:paddingRight="8px"
+          android:text="106楼"
+          android:textSize="36px"
+          android:textColor="@color/black"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#fff"
+    >
+    
+    <TextView 
+        android:id="@+id/register_tishi_txt"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:textSize="50px"
+        />
+    <View 
+        android:layout_width="800px"
+        android:layout_height="2px"
+        android:background="#b2b2b2"
+        />
+    <TextView 
+        android:id="@+id/register_tishi_btn_sure"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="55px"
+        />
+    
+
+</LinearLayout>

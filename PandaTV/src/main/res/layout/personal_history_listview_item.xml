@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personal_hy_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="30px">
+
+    <ImageView
+        android:id="@+id/personal_hy_state_img"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:contentDescription="@null"
+        android:src="@drawable/personal_normal_img"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/personal_hy_listview_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/personal_hy_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/def_no_iv" />
+
+        <TextView
+            android:id="@+id/personal_hy_listview_videoLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:background="@drawable/default_time_view"
+            android:drawableLeft="@drawable/play"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15px"
+            android:paddingRight="30px"
+            android:text="02:39"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/personal_hy_listview_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/cctv_tab_unsel" />
+
+        <TextView
+            android:id="@+id/personal_hy_listview_time"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|left"
+            android:text="09-21-2015 06:18"
+            android:textColor="@color/pe_text_bg_gray"
+            android:textSize="32px" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:paddingBottom="1px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="30px" >
+
+        <LinearLayout
+            android:id="@+id/llHomeStGroup1"
+            android:layout_width="480px"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270px" >
+
+                <ImageView
+                    android:id="@+id/ivHomeStBigImg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pe_defaule_item_img" />
+
+                <RelativeLayout
+                    android:id="@+id/rlHomeStPlayTime1"
+                    android:layout_width="230px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/default_time_view"
+                    android:gravity="center_vertical" >
+
+
+
+                    <TextView
+                        android:id="@+id/tvHomeStPlayTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imageView1"
+                        android:layout_alignLeft="@id/imageView1"
+                        android:background="@drawable/default_time_view"
+                        android:drawableLeft="@drawable/play"
+                        android:drawablePadding="3dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="02:39"
+                        android:textColor="@color/white"
+                        android:textSize="36px"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvHomeStTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvHomeStDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:textSize="32px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHomeStGroup2"
+            android:layout_width="480px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270px" >
+
+                <ImageView
+                    android:id="@+id/ivHomeStBigImg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pe_defaule_item_img" />
+
+                <RelativeLayout
+                    android:id="@+id/rlHomeStPlayTime2"
+                    android:layout_width="230px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/tvHomeStPlayTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imageView1"
+                        android:layout_alignLeft="@id/imageView1"
+                        android:background="@drawable/default_time_view"
+                        android:drawableLeft="@drawable/play"
+                        android:drawablePadding="3dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="02:39"
+                        android:textColor="@color/white"
+                        android:textSize="36px"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvHomeStTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="@color/home_text"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvHomeStDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:textSize="32px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

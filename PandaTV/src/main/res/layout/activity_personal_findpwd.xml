@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pe_bg_light_blue"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:textSize="15sp"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="40px"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/forget_tips" />
+
+
+    <cn.cntv.app.ipanda.view.ClearEditText
+        android:id="@+id/edit_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="60px"
+        android:textColorHint="#c9c9c9"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="30px"
+        android:hint="@string/forget_account_hint"
+        android:padding="15px"
+        android:layout_centerVertical="true"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/pe_shape_border_gray"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_phonenumber"
+        android:textColor="#f00"
+        android:layout_marginLeft="60px"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="30px"
+        >
+
+        <cn.cntv.app.ipanda.view.ClearEditText
+            android:id="@+id/edit_checkimage"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:textColorHint="#c9c9c9"
+            android:layout_toLeftOf="@+id/personal_reg_imgcheck"
+            android:hint="@string/forget_img_yanzhengma_hint"
+            android:padding="15px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/pe_shape_border_gray"
+            />
+
+        <TextView
+            android:id="@+id/personal_reg_imgcheck"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/forget_image_yanzhengma"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_checkimage"
+        android:textColor="#f00"
+        android:layout_marginLeft="60px"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="30px"
+        >
+
+        <cn.cntv.app.ipanda.view.ClearEditText
+            android:id="@+id/edit_checkphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/personal_reg_phonecheck"
+            android:hint="@string/forget_phone_yanzhengma_hint"
+            android:padding="15px"
+            android:textColorHint="#c9c9c9"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/pe_shape_border_gray"
+            />
+
+        <Button
+            android:id="@+id/personal_reg_phonecheck"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/pe_login_view_bg"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/regist_yanzhengma"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_checkphone"
+        android:textColor="#f00"
+        android:layout_marginLeft="60px"
+        />
+
+    <cn.cntv.app.ipanda.view.ClearEditText
+        android:id="@+id/edit_newpssword"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="30px"
+        android:textColorHint="#c9c9c9"
+        android:hint="@string/forget_set_newpaswd_hint"
+        android:padding="15px"
+        android:password="true"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/gray"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/pe_shape_border_gray"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint_newpssword"
+        android:textColor="#f00"
+        android:layout_marginLeft="60px"
+        />
+    <TextView
+        android:id="@+id/tvfoundpswd"
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:background="@drawable/pe_login_view_bg"
+        android:gravity="center"
+        android:padding="30px"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="80px"
+        android:text="@string/forget_found_pswd"
+        />
+
+</LinearLayout>

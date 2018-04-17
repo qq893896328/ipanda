@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#e616387D"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+  <LinearLayout 
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" 
+     android:paddingBottom="10dp"
+  >
+      
+
+
+	<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:id="@+id/live_china_select_channel_layout"
+		    >
+	   	 <Button 
+	       android:layout_width="35dp"
+	       android:layout_height="35dp"
+	       android:layout_gravity="right"
+	       android:background="@drawable/live_china_delect_channel"
+	       android:layout_marginTop="6dp"
+	       android:layout_marginRight="9dp"
+	       android:layout_marginBottom="11dp"
+	       android:id="@+id/live_chinnal_select_channel_cancel" 
+	       android:layout_alignParentRight="true"
+	         />
+	
+	   	 <RelativeLayout 
+	   	     android:layout_below="@id/live_chinnal_select_channel_cancel"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/que_huang_layout"
+	  			android:layout_marginBottom="15dp"
+		        >
+		        <TextView 
+		            android:id="@+id/live_china_bianji_left"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/change_lanmu"
+		            android:textSize="17sp"
+		            android:gravity="center_vertical"
+		            android:textColor="@android:color/white"
+		            android:layout_marginLeft="9dp"
+		            />
+		        <TextView 
+		            android:text="@string/longclick_can_sort"
+		            android:id="@+id/live_china_bianji_right"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="15sp"
+		            android:visibility="gone"
+		            android:textColor="@android:color/white"
+		            android:layout_toRightOf="@id/live_china_bianji_left"
+		            android:layout_marginLeft="10dp"
+		            android:layout_alignBaseline="@id/live_china_bianji_left"
+		            />
+		        <Button 
+		            android:layout_alignParentRight="true"
+		            android:layout_width="64dp"
+		            android:layout_height="26dp"
+		            android:text="@string/edit"
+		            android:textSize="15sp"
+		            android:id="@+id/live_china_select_channel_bianji"
+		            android:background="@drawable/shape_white_corner"
+		            android:textColor="@android:color/black"
+		            android:layout_marginRight="9dp"
+		            />
+		    </RelativeLayout>
+	   	 
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="9dp"
+		    android:layout_below="@id/que_huang_layout"
+		    android:id="@+id/live_chinnal_select_channel_blow_cancel"
+		     >
+		     
+		    
+		     <cn.cntv.app.ipanda.ui.livechina.view.DragGrid
+		           
+		        	android:layout_marginTop="10dp"
+	                android:id="@+id/userGridView"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="9dp"
+	                android:layout_marginRight="9dp"
+	                android:gravity="center"
+	                android:horizontalSpacing="9dp"
+	                android:listSelector="@android:color/transparent"
+	                android:numColumns="3"
+	                android:scrollbars="vertical"
+	                android:stretchMode="columnWidth"
+	                android:verticalSpacing="9dp" />
+		    <TextView 
+		        android:id="@+id/add_move_live_channel"
+		        android:layout_below="@id/userGridView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/click_add_morelanmu"
+		        android:textSize="17sp"
+		        android:layout_marginTop="35dp"
+		        android:textColor="@android:color/white"
+		        />
+		   <cn.cntv.app.ipanda.ui.livechina.view.OtherGridView
+		            android:layout_below="@id/add_move_live_channel"
+		      	    android:layout_marginTop="15dp"
+	                android:id="@+id/otherGridView"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="9dp"
+	                android:layout_marginRight="9dp"
+	                android:gravity="center"
+	                android:horizontalSpacing="9dp"
+	                android:listSelector="@android:color/transparent"
+	                android:numColumns="3"
+	                android:scrollbars="vertical"
+	                android:stretchMode="columnWidth"
+	                android:verticalSpacing="9dp" />
+		   
+		   	
+		</RelativeLayout>
+		<!--覆盖层截断事件  -->
+		<RelativeLayout
+			    android:id="@+id/live_china_fugai"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_below="@id/que_huang_layout"
+			    android:visibility="gone"
+			    >
+		</RelativeLayout>
+	</RelativeLayout>
+  </LinearLayout>	
+</ScrollView>	
+	

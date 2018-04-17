@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_title"/>
+    <!--输入框下拉文本显示-->
+    <ListView
+        android:id="@+id/listv_autosearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </ListView>
+    <!--输入历史-->
+    <LinearLayout
+        android:id="@+id/layout_history_words"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:id="@+id/layout_history_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/ijk_color_blue_500"
+            android:text="历史搜索"/>
+        <TextView
+            android:id="@+id/tv_history_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/personal_delete_img"/>
+
+
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:columnWidth="80dp"
+        android:listSelector="@color/transparent"
+        />
+    </LinearLayout>
+    <!--热门搜索-->
+    <LinearLayout
+        android:id="@+id/layout_hot_words"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/layout_hot_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/ijk_color_blue_500"
+                android:text="热门搜索"/>
+
+
+        </RelativeLayout>
+        <GridView
+            android:id="@+id/gv_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:columnWidth="80dp"
+            android:listSelector="@color/transparent"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/gray"
+        android:text="很抱歉，没有相关结果"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_result_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ijk_color_blue_500"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:text="相关视频"/>
+
+    <cn.cntv.app.ipanda.xlistview.XListView
+        android:id="@+id/search_result_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0.5dp"
+        android:layout_marginTop="4dp"
+        android:scrollbars="none" >
+    </cn.cntv.app.ipanda.xlistview.XListView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tab导航的item布局——pj -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="122px" >
+
+    <!-- padding设置tab文字中的内边距 -->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@null"
+        android:textColor="@drawable/cctv_tab_item_selector"
+        android:textSize="14sp" />
+
+    <!-- 水平线 -->
+
+    <LinearLayout
+        android:id="@+id/layout_tab_bottom_line_grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hline_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cctv_space"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <!-- 橘色指示器 -->
+
+    <LinearLayout
+        android:id="@+id/layout_tab_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cctv_tab_sel"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</RelativeLayout>

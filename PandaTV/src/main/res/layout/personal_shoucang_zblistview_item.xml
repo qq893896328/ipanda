@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <CheckBox
+        android:id="@+id/personal_chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox_selector"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/personal_hy_item_img"
+        android:layout_width="@dimen/tw_w"
+        android:layout_height="@dimen/tw_h"
+        android:layout_toRightOf="@id/personal_chk"
+        android:scaleType="fitXY"
+        android:src="@drawable/_no_img" />
+
+    <TextView
+        android:id="@+id/personal_sc_zb_listview_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/personal_hy_item_img"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/jmdTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/personal_sc_zb_listview_item_title"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

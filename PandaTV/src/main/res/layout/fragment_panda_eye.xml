@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout 
+        android:id="@+id/pandaeye_no_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        >
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/_no_net"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+             />
+        
+    </RelativeLayout>
+
+        
+
+    <cn.cntv.app.ipanda.xlistview.XListView
+        android:id="@+id/pandaeye_home_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/listview_top_padding"
+        android:visibility="gone"
+        android:scrollbars="none" >
+  </cn.cntv.app.ipanda.xlistview.XListView>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

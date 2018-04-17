@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+		<RelativeLayout 
+	    android:id="@+id/live_china_tab_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/cctv_space"
+	    android:paddingTop="6dp"
+	    >
+	   <cn.cntv.app.ipanda.view.LiveChinaTab2PageIndicator
+        android:id="@+id/live_china_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:layout_marginRight="41dp"
+        android:background="#fff"
+         />
+	   
+	   <ImageView 
+	       android:id="@+id/live_china_add_channel"
+	       android:layout_width="41dp"
+	       android:layout_height="41dp"
+	       android:src="@drawable/live_china_add"
+	       android:layout_alignParentRight="true"
+	       android:scaleType="centerCrop"
+	       android:padding="5dp"
+	       android:background="@android:color/white"
+	       />
+	   <View 
+	       android:layout_toLeftOf="@id/live_china_add_channel"
+	       android:layout_width="10dp"
+	       android:layout_height="41dp"
+	       android:background="@drawable/litter_hide"
+	       />
+	</RelativeLayout>
+
+    <cn.cntv.app.ipanda.ui.livechina.view.NoInteruViewPager
+        android:id="@+id/live_china_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/live_china_tab_layout"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

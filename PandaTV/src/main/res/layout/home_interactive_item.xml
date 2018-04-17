@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical"
+    android:paddingTop="18px" >
+
+    <LinearLayout
+        android:id="@+id/llInterGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlHomeGroupItem"
+            android:layout_width="match_parent"
+            android:layout_height="132px"
+            android:background="@drawable/home_panda_eye_border"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvHomeInterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30px"
+                android:text="TextView"
+                android:textColor="@color/home_group_title"
+                android:textSize="52px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="567px"
+            android:orientation="vertical"
+            android:padding="10px" >
+
+            <ImageView
+                android:id="@+id/ivHomeInterImg"
+                android:layout_width="match_parent"
+                android:layout_height="557px"
+                android:scaleType="fitXY"
+                android:src="@drawable/def_no_iv" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

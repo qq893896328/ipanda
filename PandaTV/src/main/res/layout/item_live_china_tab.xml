@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/white"
+    android:orientation="vertical" 
+    android:id="@+id/play_content_view"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_layout"
+         >
+         
+	   <ImageView 
+        android:id="@+id/live_china_tab_item_img"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="600px"
+        />
+   	
+	   	<ImageView 
+	   	         android:layout_width="30dp"
+	   	         android:layout_height="30dp"
+	   	         android:src="@drawable/lpanda_pause"
+	   	         android:layout_centerInParent="true"
+	   	         android:id="@+id/btn_play"
+	   	         />
+	   	
+
+	   	
+	<!--    	<include 
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:id="@+id/live_play_video"
+	   	    layout="@layout/giraffe_player_live"
+	   	    android:visibility="gone"
+	   	    /> -->
+    </RelativeLayout>
+   	
+    <TextView 
+        android:id="@+id/live_china_tab_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:textSize="40px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12px"
+        android:textColor="@color/live_china_black"
+        />
+	<RelativeLayout 
+	    android:id="@+id/live_china_tab_item_jianjie_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginBottom="15px"
+	    >
+	    <TextView 
+        android:id="@+id/live_china_tab_item_jianjie_tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jianjie"
+		android:textSize="12sp"
+        android:layout_marginLeft="50px"
+         android:textColor="@color/live_china_grak"
+        />
+		<RelativeLayout
+			android:id="@+id/livechina_arrow"
+			android:layout_width="50dp"
+			android:layout_centerHorizontal="true"
+			android:layout_height="wrap_content">
+	    <TextView
+        android:id="@+id/live_china_tab_item_jianjie_img"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/live_china_detail_down"
+         android:textColor="@color/live_china_grak"
+        />
+		</RelativeLayout>
+		<View
+			android:id="@+id/livechina_jianjie_underline"
+			android:layout_width="match_parent"
+			android:layout_height="5px"
+			android:layout_below="@id/live_china_tab_item_jianjie_tishi"
+			android:layout_marginTop="5dp"
+			android:visibility="gone"
+			android:background="@color/cctv_grey" />
+
+     	<TextView 
+     	android:layout_below="@id/livechina_jianjie_underline"
+        android:id="@+id/live_china_tab_item_jianjie_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:textColor="@color/live_china_black"
+        android:paddingTop="72px"
+		android:layout_marginRight="40px"
+        android:paddingBottom="32px"
+        android:layout_marginLeft="40px"
+        android:lineSpacingExtra="12px"
+        />
+	</RelativeLayout>
+	
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="30px"
+	    android:background="@color/cctv_space"
+	    />
+	
+	
+
+
+</LinearLayout>

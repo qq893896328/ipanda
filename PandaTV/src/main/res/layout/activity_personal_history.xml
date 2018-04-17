@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pe_bg_light_blue"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/personal_history_item_detail_top"
+        layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:id="@+id/personal_history_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personal_history_item_detail_top"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/personal_history_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/personal_history_item_detail_bottom"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="10px"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/personal_history_item_detail_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/personal_hy_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="全选"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/pe_gray" >
+            </View>
+
+            <TextView
+                android:id="@+id/personal_hy_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="删除"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/personal_hy_net_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personal_history_item_detail_top"
+        android:scaleType="fitXY"
+        android:src="@drawable/_no_history" />
+
+</RelativeLayout>

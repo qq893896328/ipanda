@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pe_listview_item_detail_top"
+        layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:id="@+id/article_no_net_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:layout_below="@id/pe_listview_item_detail_top"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/_no_net"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pe_listview_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pe_listview_item_detail_top"
+        >
+
+        <WebView
+            android:id="@+id/pe_listview_item_detail_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pe_listview_item_detail_bottom" />
+
+        <LinearLayout
+            android:id="@+id/pe_listview_item_detail_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/collect_no" />
+
+            <TextView
+                android:id="@+id/pe_listview_item_shareview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pe_share_img" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

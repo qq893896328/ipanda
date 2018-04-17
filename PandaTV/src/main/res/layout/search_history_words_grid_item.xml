@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grid_view_divide_line_selector">
+    <TextView
+        android:id="@+id/hot_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_centerInParent="true"
+        android:textColor="#666666"
+        android:text="热门"
+        android:maxEms="10"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical"
+    android:paddingBottom="1px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30px">
+
+            <ImageView
+                android:id="@+id/ivHomeInterOne"
+                android:layout_width="match_parent"
+                android:layout_height="557px"
+                android:scaleType="fitXY"
+                android:src="@drawable/pe_defaule_item_img" />
+
+            <TextView
+                android:id="@+id/tvHomeInterOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:ellipsize="end"
+                android:textColor="@color/home_text"
+                android:textSize="42px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

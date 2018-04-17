@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="1080px"
+    android:layout_height="460px"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical"
+    android:paddingBottom="1px" >
+
+    <cn.cntv.app.ipanda.view.HorizontalListView
+        android:id="@+id/hlvItem"
+        android:layout_width="1060px"
+        android:layout_height="460px"
+        android:background="@color/white" >
+    </cn.cntv.app.ipanda.view.HorizontalListView>
+
+</LinearLayout>

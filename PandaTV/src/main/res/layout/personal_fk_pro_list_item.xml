@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="问题1"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/pe_bg_light_blue"
+        />
+    
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="时间太赶，我们做不完啊啊啊啊,时间太赶，我们做不完啊啊啊啊,时间太赶，我们做不完啊啊啊啊,时间太赶，我们做不完啊啊啊啊,时间太赶，我们做不完啊啊啊啊,时间太赶，我们做不完啊啊啊啊"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    
+    
+</LinearLayout>

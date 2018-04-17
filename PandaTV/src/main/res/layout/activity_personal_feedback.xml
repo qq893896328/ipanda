@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pe_bg_light_blue"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="122px"
+        android:background="@color/pe_bg_light_blue"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/feedback_rb_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/set_back_myquestion"
+            android:background="@color/white"
+            android:textColor="#1E539C"
+            android:textSize="@dimen/text_size_four" />
+        <RadioButton
+            android:id="@+id/feedback_rb_right"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:button="@null"
+            android:text="@string/set_back_commonquestion"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_four"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="30px"
+        android:id="@+id/feedback_content_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

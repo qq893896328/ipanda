@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="132px"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlHomeSSubject"
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvHomeSSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_text"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+</LinearLayout>

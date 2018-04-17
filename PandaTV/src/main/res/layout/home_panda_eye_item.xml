@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_tab_back"
+    android:orientation="vertical"
+    android:paddingBottom="1px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingTop="20px" >
+
+        <ImageView
+            android:id="@+id/ivHomePandaEye"
+            android:layout_width="360px"
+            android:layout_height="360px"
+            android:scaleType="fitXY"
+            android:src="@drawable/pe_defaule_item_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="360px"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llHomePandaEyeGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:background="@drawable/home_panda_eye_border" >
+
+                <cn.cntv.app.ipanda.view.BorderTextView
+                    android:id="@+id/btvPandaEyeTitleType1"
+                    android:layout_width="210px"
+                    android:layout_height="85px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15px"
+                    android:gravity="center"
+                    android:padding="3px"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvPandaEyeTitleType1"
+                        android:layout_width="200px"
+                        android:layout_height="70px"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:textSize="42px"
+                        android:singleLine="true"
+                        android:text="时评"
+                        android:textColor="@color/home_panda_eye_type" />
+                </cn.cntv.app.ipanda.view.BorderTextView>
+
+                <TextView
+                    android:id="@+id/tvPandaEyeTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="3"
+                    android:textColor="@color/home_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHomePandaEyeGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:paddingTop="30px" >
+
+                <cn.cntv.app.ipanda.view.BorderTextView
+                    android:id="@+id/btvPandaEyeTitleType2"
+                    android:layout_width="210px"
+                    android:layout_height="85px"
+                    android:layout_marginLeft="15px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="3px"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvPandaEyeTitleType2"
+                        android:layout_width="200px"
+                        android:layout_height="70px"
+                        android:ellipsize="end"
+                        android:textSize="42px"
+                        android:text="时评"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/home_panda_eye_type" />
+                </cn.cntv.app.ipanda.view.BorderTextView>
+
+                <TextView
+                    android:id="@+id/tvPandaEyeTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:lines="3"
+                    android:textColor="@color/home_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

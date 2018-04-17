@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="525px"
+    android:layout_height="385px"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="1px"
+    android:paddingLeft="20px"
+    android:paddingTop="20px" >
+
+    <RelativeLayout
+        android:layout_width="465px"
+        android:layout_height="260px" >
+
+        <ImageView
+            android:id="@+id/ivSSubItemBigImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pe_defaule_item_img" />
+
+        <RelativeLayout
+            android:id="@+id/rlSSubItemPlayTime"
+            android:layout_width="215px"
+            android:layout_height="62px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/default_time_view" >
+
+            <ImageView
+                android:id="@+id/ivSSubItemSmImg"
+                android:layout_width="32px"
+                android:layout_height="32px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:src="@drawable/home_play_icon" />
+
+            <TextView
+                android:id="@+id/tvSSubItemPlayTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/ivSSubItemSmImg"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="36px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSSubItemTitle"
+        android:layout_width="435px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/home_text"
+        android:textSize="42px" />
+
+</LinearLayout>

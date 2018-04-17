@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/lpanda_griditem_image"
+        android:layout_width="354px"
+        android:layout_height="198px"
+        android:background="@drawable/bg_img_border"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/lpanda_griditem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingRight="15px"
+        android:layout_alignLeft="@+id/lpanda_griditem_image"
+        android:layout_below="@+id/lpanda_griditem_image"
+        android:textSize="42px" />
+
+    <RelativeLayout
+        android:layout_width="200px"
+        android:layout_height="66px"
+        android:layout_alignBottom="@+id/lpanda_griditem_image"
+        android:layout_alignLeft="@+id/lpanda_griditem_image"
+        android:background="@drawable/lpanda_bottom_gra" >
+
+        <TextView
+            android:id="@+id/lpanda_live_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="10px"
+            android:drawableLeft="@drawable/lpanda_live_layer"
+            android:drawablePadding="5dp"
+            android:text="Live"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

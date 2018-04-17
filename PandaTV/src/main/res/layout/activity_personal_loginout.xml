@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/pe_bg_light_blue"
+	android:orientation="vertical" >
+
+	<include layout="@layout/common_title" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:textSize="20sp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:textColor="@color/colorPrimaryDark"
+		android:text="CNTV通行证"
+		android:visibility="gone"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:layout_marginTop="10dp"
+		android:id="@+id/person_have_login_layout"
+		android:padding="15dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"
+		>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:drawablePadding="10dp"
+			android:gravity="center_vertical"
+			android:textColor="@color/black"
+			android:text="@string/info_touxiang" />
+
+		<TextView
+			android:id="@+id/tv_headjiantou"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/personal_enter_img"
+			/>
+
+		<cn.cntv.app.ipanda.view.CircleImageView
+			android:id="@+id/iv_headicon"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:scaleType="centerCrop"
+			android:layout_toLeftOf="@+id/tv_headjiantou"/>
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/personal_nickname_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="10dp"
+		android:padding="15dp" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:drawablePadding="10dp"
+			android:gravity="center_vertical"
+			android:textColor="@color/black"
+			android:text="@string/personal_nickname" />
+
+		<TextView
+			android:id="@+id/tv_nichengjiantou"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/personal_enter_img"
+			/>
+
+		<TextView
+			android:id="@+id/nick_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text=""
+			android:textColor="#000000"
+			android:layout_toLeftOf="@+id/tv_nichengjiantou"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/login_out_layout"
+		>
+		<TextView
+			android:layout_marginTop="66px"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:textSize="46px"
+			android:visibility="gone"
+			android:layout_marginLeft="60px"
+			/>
+		<TextView
+			android:id="@+id/btn_login_out"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="60px"
+			android:layout_marginRight="60px"
+			android:layout_height="132px"
+			android:textColor="@color/white"
+			android:background="@drawable/pe_login_view_bg"
+			android:text="@string/info_loginout"
+			android:gravity="center"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="360px"
+			/>
+
+	</RelativeLayout>
+
+</LinearLayout>
